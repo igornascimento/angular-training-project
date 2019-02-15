@@ -12,13 +12,7 @@ import { TestFormComponent } from './components/test-form/test-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    ServerComponent,
-    ServersComponent,
-    AlertDangerComponent,
-    AlertWarningComponent,
-    TestFormComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
