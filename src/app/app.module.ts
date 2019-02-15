@@ -8,6 +8,7 @@ import { ServersComponent } from './components/servers/servers.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AlertDangerComponent } from './components/alert-danger/alert-danger.component';
 import { AlertWarningComponent } from './components/alert-warning/alert-warning.component';
+import { TestFormComponent } from './components/test-form/test-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AlertWarningComponent } from './components/alert-warning/alert-warning.
     ServerComponent,
     ServersComponent,
     AlertDangerComponent,
-    AlertWarningComponent
+    AlertWarningComponent,
+    TestFormComponent
   ],
   imports: [
     BrowserModule,

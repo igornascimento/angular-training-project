@@ -10,6 +10,7 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = 'No server was created.';
   serverName = 'Predefined server name';
+  servers = ['server1', 'server2'];
 
   constructor() {
     setTimeout(() => {
@@ -21,7 +22,9 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server was created succesfuly!';
+    let num = Math.floor(Math.random()*10);
+    this.serverCreationStatus = 'Server '+ num +' was created succesfuly!';
+    this.servers = this.servers.concat('server'+num);
   }
 
   onUpdateServerName(event: Event) {
