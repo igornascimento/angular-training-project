@@ -1,21 +1,30 @@
 <div class="container-fluid">
-  <a href="/" class="logo"></a>
-  <div class="logged-user"></div>
-
-  <form action="#" class="form-inline">
-    <div class="form-group mb-2">
-      <label for="input-search" class="sr-ony">Terms</label>
-      <input type="text" id="input-search" class="form-control" />
+  <div class="row app-top-header">
+    <div class="col">
+      <a href="/" class="logo"></a>
     </div>
-    <button class="btn btn-primary mb-2">Search</button>
-  </form>
   
-  <ul class="nav nav-pills">
+    <div class="col col-lg-2">
+      <form action="#" class="form-inline">
+        <div class="form-group mb-2">
+          <input type="text" id="input-search" class="form-control" />
+        </div>
+        <button class="btn btn-primary mb-2">Search</button>
+      </form>
+    </div>
+    <div class="col col-sm-1">
+      <div class="logged-user"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <ul id="main-nav-bar" class="nav nav-tabs">
     <li class="nav-item">
-      <a href="#" class="nav-link active">Ingredients</a>
+      <a href="#" class="nav-link active" (click)="changeTabs($event)" id="ingredients">Ingredients</a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link">Recipies</a>
+      <a href="#" class="nav-link" (click)="changeTabs($event)" id="recipies">Recipies</a>
     </li>
   </ul>
 </div>

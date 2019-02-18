@@ -1,0 +1,16 @@
+.app-top-header {
+  margin-top: 10px;
+}
+.logo {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background: #DEDEDE;
+}
+
+.logged-user {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background: #DEDEDE;
+}

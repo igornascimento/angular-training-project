@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  changeTabs(event: Event) {
+    event.preventDefault();
+    let mainNavBarEls = document.querySelectorAll('#main-nav-bar .nav-link');
+    for (let i=0; i<mainNavBarEls.length; i++) {
+      mainNavBarEls[i].classList.remove('active');
+    }
+    let el = <HTMLInputElement>event.target;
+    el.classList.add('active');
+  }
+
 }
