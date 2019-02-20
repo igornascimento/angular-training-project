@@ -3,7 +3,7 @@
     <div class="col">
       <a href="/" class="logo"></a>
     </div>
-  
+
     <div class="col col-lg-2">
       <form action="#" class="form-inline">
         <div class="form-group mb-2">
@@ -21,10 +21,13 @@
 <div class="container">
   <ul id="main-nav-bar" class="nav nav-tabs">
     <li class="nav-item">
-      <a href="#" class="nav-link active" (click)="changeTabs($event)" id="ingredients">Ingredients</a>
+      <a routerLink="/" class="nav-link active" (click)="changeTabs($event)">Home</a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link" (click)="changeTabs($event)" id="recipies">Recipies</a>
+      <a routerLink="/servers" class="nav-link" (click)="changeTabs($event)">Servers</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/users" class="nav-link" (click)="changeTabs($event)">Users</a>
     </li>
   </ul>
 </div>
